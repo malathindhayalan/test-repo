@@ -52,7 +52,7 @@ function createAllPossibleFour() {
 }
 
 function createPossibilityBThread(i, p, color) {
-    //yellow winner
+    //announce yellow winner
     if (color==="yellow"){
         
     bp.registerBThread("yellowpossible_" + i+"_"+color, function () {
@@ -66,7 +66,7 @@ function createPossibilityBThread(i, p, color) {
         bp.sync({ block: putEventSet });
     });
     }
-// red winner
+// announce red winner
 
     if (color==="red"){
     bp.registerBThread("redpossible_" + i+"_"+color, function () {
